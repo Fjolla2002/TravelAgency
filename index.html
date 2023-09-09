@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html manifest="index.appcache" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/style1.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Travel Dream</title>
+</head>
+
+<body>
+  <header>
+    <div class="top-nav row">
+      <div class="container row">
+        <div class="top-nav_left">
+          <a href="mailto:contasct@example.com">contact@example.com</a>
+          <a href="tel:000000">(00)-000-000</a>
+        </div>
+        <div id="topNavRight" class="top-nav_right">
+          <a href="signIn.html">Sign In</a>
+          <a href="signUp.html">Sign Up</a>
+          <a href="cart.html">Cart</a>
+          <a id="myAccount" href="myAccount.html">My Account</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-nav">
+      <div class="container row">
+        <div class="nav-wrapper">
+          <a href="index.html"><img class="logo" src="assets/images/logo.png" id="logo" alt="Travel Dream" /> </a>
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="menu">
+            <li><a href="index.html" id="active">Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="index.html#featured-packages">Packages</a></li>
+            <li><a href="index.html#latest-blogs">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="container banner-content">
+        <div class="banner-text">
+          <h1 class="banner-text_mainHeader">
+            Traveller <br />
+            <span>for life. </span>
+          </h1>
+          <p class="banner-text_paragraph">Live your best moments</p>
+        </div>
+
+        <div class="banner-form__wrapper">
+          <form action="" class="banner-form" id="form">
+            <div class="banner-form_flex banner-form__destination" style="position: relative;">
+              <div class="banner-form__icon">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+              </div>
+              <input type="text" name="destination" id="destination" placeholder="Where are you going?" />
+              <span id="destinationErrorMessage" class="errors"></span>
+
+            </div>
+            <div class="banner-form_flex banner-form__location">
+              <div class="banner-form__icon">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+              </div>
+              <input type="text" name="location" id="location" placeholder="Location" />
+              <span id="locationErrorMessage" class="errors"></span>
+            </div>
+            <div class="banner-form_flex banner-form__tour-type">
+              <div class="banner-form__icon">
+                <i class="fa-sharp fa-solid fa-clipboard-check"></i>
+              </div>
+
+              <input type="text" name="tourType" id="tourType" placeholder="Tour Type" />
+              <span id="tourTypeErrorMessage" class="errors"></span>
+            </div>
+            <div class="banner-form_flex banner-form__min-price">
+              <div class="banner-form__icon">
+                <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+              </div>
+              <input type="number" name="minPrice" id="minPrice" placeholder="Min price" />
+              <span id="minPriceErrorMessage" class="errors"></span>
+            </div>
+            <div class="banner-form_flex banner-form__max-price">
+              <div class="banner-form__icon">
+                <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+              </div>
+              <input type="number" name="maxPrice" id="maxPrice" placeholder="Max price" />
+              <span id="maxPriceErrorMessage" class="errors"></span>
+            </div>
+            <div class="banner-form_flex banner-form__language">
+              <div class="banner-form__icon">
+                <i class="fa-solid fa-earth-asia"></i>
+              </div>
+              <input type="text" name="language" id="language" placeholder="Language" />
+              <span id="languageErrorMessage" class="errors"></span>
+            </div>
+            <div class="banner-form_flex search">
+              <div>
+                <img src="" alt="" />
+              </div>
+              <input type="submit" id="bannerSearch" value="Search" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="services row">
+      <div class="services-col">
+        <img src="assets/images/001-around.png" alt="Best Destinations" />
+        <div>
+          <h3>Best Destinations</h3>
+          <p class="section-text">
+            Find out what the best destinations in the World are as awarded by
+            millions
+          </p>
+        </div>
+      </div>
+      <div class="services-col">
+        <img src="assets/images/002-offer.png" alt="Best Price" />
+        <div>
+          <h3>Best Price Guaranteed</h3>
+          <p class="section-text">
+            We constantly ensures to have lowest prices available online and
+            it is commit-
+          </p>
+        </div>
+      </div>
+      <div class="services-col">
+        <img src="assets/images/003-clock.png" alt="Instant Booking" />
+        <div>
+          <h3>Instant Booking</h3>
+          <p class="section-text">
+            With our Fast Booking option you can book the following public
+            tours and pay
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="top-destinations">
+      <div class="container">
+        <h2 class="section-title">Top Destinations</h2>
+        <p class="section-description">
+          Find out what the best destinations in the World
+        </p>
+        <div class="row top-destinations_pics">
+          <div class="destination">
+            <span>Bhutan</span>
+            <img src="assets/images/destination1.png" alt="Bhutan" />
+          </div>
+          <div class="destination">
+            <span>Japan</span>
+            <img src="assets/images/destination2.png" alt="Japan" />
+          </div>
+          <div class="destination">
+            <span>Nepal</span>
+            <img src="assets/images/destination3.png" alt="Nepal" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="discount">
+      <div class="container">
+        <h2>
+          <span class="discount_bold" id="discount_bold">Get upto 50% discount</span> <br />
+          by joining us within 11 march
+        </h2>
+        <div class="countdown-container">
+          <div class="days-container">
+            <div class="days"></div>
+            <div class="days-label">days</div>
+          </div>
+          <div class="hours-container">
+            <div class="hours"></div>
+            <div class="hours-label">hours</div>
+          </div>
+          <div class="minutes-container">
+            <div class="minutes"></div>
+            <div class="minutes-label">minutes</div>
+          </div>
+          <div class="seconds-container">
+            <div class="seconds"></div>
+            <div class="seconds-label">seconds</div>
+          </div>
+        </div>
+        <a href="signUp.html" class="join-us_btn">join us</a>
+      </div>
+    </section>
+    <section class="featured-packages" id="featured-packages">
+      <div class="container">
+        <h2 class="section-title">Featured Packages</h2>
+        <p class="section-description">
+          We will help you find the trip that's perfect for you!
+        </p>
+        <div class="row  featured-package ">
+          <div class="section-col">
+            <img src="assets/images/package1.png" alt="Thailand City Tour" />
+            <div class="section-col_content">
+              <div>
+                <h3>Thailand City Tour</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+              <div class="package-booking row">
+                <a href="bookNow.html" class="book-now_btn">Book Now</a>
+                <span class="price">&dollar; 120</span>
+              </div>
+            </div>
+          </div>
+          <div class="section-col">
+            <img src="assets/images/package2.png" alt="Laos City Tour" />
+            <div class="section-col_content">
+              <div>
+                <h3>Laos City Tour</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+              <div class="package-booking row">
+                <a href="bookNow.html" class="book-now_btn">Book Now</a>
+                <span class="price">&dollar; 120</span>
+              </div>
+            </div>
+          </div>
+          <div class="section-col">
+            <img src="assets/images/package3.png" alt="Singapore City Tour" />
+            <div class="section-col_content">
+              <div>
+                <h3>Singapore City Tour</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+              <div class="package-booking row">
+                <a href="bookNow.html" class="book-now_btn">Book Now</a>
+                <span class="price">&dollar; 120</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients-reviews">
+      <div class="container">
+        <h2 class="section-title">Clients Reviews</h2>
+        <p class="section-description">
+          We have many happy customers who booked holidays with us.
+        </p>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="row testimonal">
+              <div class="cards">
+                <img src="assets/images/review1.png" alt="Client" />
+                <img src="assets/icons/quote-left.svg" alt="left quote" width="15" class="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut
+                  labore et dolore magna aliqua. Ut minim veniam minim aliqua magna.
+                </p>
+                <div class="client-details">
+                  <span class="client-name">John Smith</span>
+                  <span class="client-address">London, UK</span>
+                </div>
+              </div>
+              <div class="cards">
+                <img src="assets/images/review2.png" alt="Client" />
+                <img src="assets/icons/quote-left.svg" alt="left quote" width="15" class="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut
+                  labore et dolore magna aliqua. Ut minim veniam minim aliqua magna.
+                </p>
+                <div class="client-details">
+                  <span class="client-name">Jennie White</span>
+                  <span class="client-address">New York, America</span>
+                </div>
+              </div>
+              <div class="cards">
+                <img src="assets/images/review3.png" alt="Client" />
+                <img src="assets/icons/quote-left.svg" alt="left quote" width="15" class="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut
+                  labore et dolore magna aliqua. Ut minim veniam minim aliqua magna.
+                </p>
+                <div class="client-details">
+                  <span class="client-name">Aiko Takahashi</span>
+                  <span class="client-address">Tokyo, Japan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="row testimonal">
+              <div class="cards">
+                <img src="assets/images/Client1.png" alt="Client" />
+                <img src="assets/icons/quote-left.svg" alt="left quote" width="15" class="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut
+                  labore et dolore magna aliqua. Ut minim veniam minim aliqua magna.
+                </p>
+                <div class="client-details">
+                  <span class="client-name">Aila Walles</span>
+                  <span class="client-address">Tokyo, Japan</span>
+                </div>
+              </div>
+              <div class="cards">
+                <img src="assets/images/Client2.png" alt="Client" />
+                <img src="assets/icons/quote-left.svg" alt="left quote" width="15" class="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut
+                  labore et dolore magna aliqua. Ut minim veniam minim aliqua magna.
+                </p>
+                <div class="client-details">
+                  <span class="client-name">Will Smith</span>
+                  <span class="client-address">London, UK</span>
+                </div>
+              </div>
+              <div class="cards">
+                <img src="assets/images/Client3.png" alt="Client" />
+                <img src="assets/icons/quote-left.svg" alt="left quote" width="15" class="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut
+                  labore et dolore magna aliqua. Ut minim veniam minim aliqua magna.
+                </p>
+                <div class="client-details">
+                  <span class="client-name">Justin Stones</span>
+                  <span class="client-address">Tokyo, Japan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="row testimonal">
+              <div class="cards">
+                <img src="assets/images/Client4.png" alt="Client" />
+                <img src="assets/icons/quote-left.svg" alt="left quote" width="15" class="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut
+                  labore et dolore magna aliqua. Ut minim veniam minim aliqua magna.
+                </p>
+                <div class="client-details">
+                  <span class="client-name">Crist Rice</span>
+                  <span class="client-address">New York, America</span>
+                </div>
+              </div>
+              <div class="cards">
+                <img src="assets/images/Client5.png" alt="Client" />
+
+                <img src="assets/icons/quote-left.svg" alt="left quote" width="15" class="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut
+                  labore et dolore magna aliqua. Ut minim veniam minim aliqua magna.
+                </p>
+                <div class="client-details">
+                  <span class="client-name">Aiko Timberland</span>
+                  <span class="client-address">Tokyo, Japan</span>
+                </div>
+              </div>
+              <div class="cards">
+                <img src="assets/images/Client6.png" alt="Client" />
+
+                <img src="assets/icons/quote-left.svg" alt="left quote" width="15" class="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut
+                  labore et dolore magna aliqua. Ut minim veniam minim aliqua magna.
+                </p>
+                <div class="client-details">
+                  <span class="client-name">Jennie White</span>
+                  <span class="client-address">London, UK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section class="special-offer">
+      <div class="special-offer_left">
+        <div class="special-offer_left_text">
+          <p class="special-offer_p1">Have Your</p>
+          <p class="special-offer_p2">Lifetime</p>
+          <p class="special-offer_p3">Experience</p>
+        </div>
+      </div>
+      <div class="special-offer_right">
+        <div class="special-offer_right_content">
+          <h4 class="special-offer_right_title">Special Offer</h4>
+          <h3 class="percentage-sale">40%</h3>
+          <span id="off">OFF</span>
+
+          <h4 class="special-offer_right_sub-title">Thailand</h4>
+          <div class="special-offer_right_text row">
+            <ul>
+              <li><i class="fa-solid fa-arrow-right"></i>5 Days 6 Nights</li>
+              <li><i class="fa-solid fa-arrow-right"></i>2 Person</li>
+              <li>
+                <i class="fa-solid fa-arrow-right"></i>5 Star Accomodation
+              </li>
+            </ul>
+            <ul>
+              <li><i class="fa-solid fa-arrow-right"></i>Transportation</li>
+              <li><i class="fa-solid fa-arrow-right"></i>Food Facilities</li>
+            </ul>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
+            quo. Debitis iusto perferendis ipsum dolores dolor velit itaque
+          </p>
+          <div class="offer-price row">
+            <div>
+              <p class="offer-currentPrice">$900</p>
+              <span class="offer-lastPrice">$1500</span>
+            </div>
+            <div class="reviews-row">
+              <img src="assets/images/stars.png" alt="stars" />
+              <span class="offer-reviews">(38 Review)</span>
+            </div>
+          </div>
+          <div class="offer-buttons">
+            <a href="bookNow.html" class="book-now_btn">Book Now</a>
+            <a class="read-more_btn readMoreBtn" id="readMoreBtn">Read More</a>
+          </div>
+          <div id="readMore">
+            <div class="read-more_bar">
+              <h4>Read More</h4>
+              <span class="read-more_close" id="readMoreClose">X</span>
+            </div>
+            <hr />
+            <div class="read-more_content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni est, recusandae aperiam ex
+                officiis
+                eligendi, vitae illum impedit quaerat iusto illo accusantium, quidem rem sequi perferendis
+                voluptatem
+                voluptates assumenda ipsam quia praesentium maiores! Labore dolore saepe quis. Soluta
+                inventore at
+                atque, id dolor quisquam ipsa similique hic sequi. Laboriosam, accusantium.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni est, recusandae aperiam ex
+                officiis
+                eligendi, vitae illum impedit quaerat iusto illo accusantium, quidem rem sequi perferendis
+                voluptatem
+                voluptates assumenda ipsam quia praesentium maiores! Labore dolore saepe quis. Soluta
+                inventore at
+                atque, id dolor quisquam ipsa similique hic sequi. Laboriosam, accusantium.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni est, recusandae aperiam ex
+                officiis
+                eligendi, vitae illum impedit quaerat iusto illo accusantium, quidem rem sequi perferendis
+                voluptatem
+                voluptates assumenda ipsam quia praesentium maiores! Labore dolore saepe quis. Soluta
+                inventore at
+                atque, id dolor quisquam ipsa similique hic sequi. Laboriosam, accusantium.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="latest-blogs" id="latest-blogs">
+      <div class="container">
+        <h2 class="section-title">Latest Blogs</h2>
+        <p class="section-description">
+          Travel News from all over the world for comfortable travel
+        </p>
+        <div class="row testimonal">
+          <div class="section-col">
+            <img src="assets/images/blog1.png" alt="Blog 1" />
+            <div class="section-col_content">
+              <div>
+                <p class="date"> 14th, April, 2020</p>
+                <h3 class="blog-title">Stay safe to keep others safe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tem ut labore et dolore magna
+                </p>
+              </div>
+              <div class="blog-button row">
+                <a href="#" class="read-more readMoreBtn">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="section-col">
+            <img src="assets/images/blog2.png" alt="Blog 2" />
+            <div class="section-col_content">
+              <div>
+                <p class="date"> 14th, April, 2020</p>
+                <h3 class="blog-title">Stay safe to keep others safe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tem ut labore et dolore magna
+                </p>
+              </div>
+              <div class="blog-button row">
+                <a href="#" class="read-more readMoreBtn">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="section-col">
+            <img src="assets/images/blog3.png" alt="Blog 3" />
+            <div class="section-col_content">
+              <div>
+                <p class="date"> 14th, April, 2020</p>
+                <h3 class="blog-title">Stay safe to keep others safe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tem ut labore et dolore magna
+                </p>
+              </div>
+              <div class="blog-button row">
+                <a href="#" class="read-more readMoreBtn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="container">
+        <div class="row subscribe-newsletter">
+          <div class="subscribe">
+            <h2>
+              Subscribe to our <br />
+              newsletter for updates
+            </h2>
+          </div>
+          <div class="subscribe">
+            <p>
+              For the best recommendation of your. <br />
+              Please subscribe us.
+            </p>
+            <form class="subcription" name="submit-to-google-sheet">
+              <input type="email" name="Email" placeholder="Enter Your Email Here" id="subscribeInput" required />
+              <button type="submit">Subscribe</button>
+            </form>
+            <br />
+            <span id="message"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Travel Dream</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+          <h4>Connect with us</h4>
+          <ul class="social-networks">
+            <li>
+              <a href="https://twitter.com/" target="_blank"><img src="assets/icons/twitter.svg"
+                  alt="twitter icon" /></a>
+            </li>
+            <li>
+              <a href="https://myaccount.google.com/" target="_blank"><img src="assets/icons/google-plus.svg"
+                  alt="google-plus icon" /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/"><img src="assets/icons/linkedin.svg" target="_blank"
+                  alt="linkedin icon" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="index.html">Blogs</a></li>
+            <li><a href="index.html">Testimonals</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li>China</li>
+            <li>Venezuela</li>
+            <li>Brazil</li>
+            <li>Australia</li>
+            <li>London</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our activities</h4>
+          <ul>
+            <li>Trekking</li>
+            <li>Peak Climbing</li>
+            <li>Biking</li>
+            <li>River Rafting</li>
+            <li>Cultural Tours</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom-container">
+        <div class="bottom-text">
+          <span>&copy; Copyright 2020. TravelloLife, Designed by
+            <a href="https://themeforest.net/search/jungle" target="_blank">Templates Jungle</a></span>
+        </div>
+        <div class="bottom-cards">
+          <img src="assets/images/master-card.png" alt="Master Card" />
+          <img src="assets/images/visa.png" alt="Visa" />
+          <img src="assets/images/american-express.png" alt="American Express" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/slider.js"></script>
+  <script>
+    const readMoreContainer = document.getElementById("readMore");
+    // const readMoreBtn = document.getElementById("readMoreBtn");
+    const readMoreButtons = [...document.getElementsByClassName("readMoreBtn")]
+    const readMoreClose = document.getElementById("readMoreClose");
+
+    readMoreButtons.map((item) => {
+      item.addEventListener("click", () => {
+        readMoreContainer.style.display = "block";
+      });
+    })
+
+    readMoreBtn.addEventListener("click", () => {
+      readMoreContainer.style.display = "block";
+    });
+
+    readMoreClose.addEventListener("click", () => {
+      readMoreContainer.style.display = "none";
+    });
+  </script>
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzWwevbSIjV5nhs0y3Dul2PMQSy2hdhDWJ_1J1NTLttMA4qBKw0dIZSrFMPjvfjlpHnFg/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const message = document.getElementById("message");
+    const subscribeInput = document.getElementById("subscribeInput");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (subscribeInput.value === sessionStorage.getItem("subscribe")) {
+        message.textContent = "You cannot subscribe with the same email twice!";
+        setTimeout(function () {
+          message.textContent = "";
+        }, 3500);
+        return;
+      }
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          message.innerHTML = "Thank You For Subscribing!";
+          setTimeout(function () {
+            message.innerHTML = "";
+          }, 2000);
+          sessionStorage.setItem("subscribe", subscribeInput.value)
+          form.reset();
+
+        })
+        .catch((error) => console.error("Error!", error.message));
+    })
+  </script>
+  <script>
+
+    const countDownClock = (number = 100, format = "seconds") => {
+      const d = document;
+      const daysElement = d.querySelector(".days");
+      const hoursElement = d.querySelector(".hours");
+      const minutesElement = d.querySelector(".minutes");
+      const secondsElement = d.querySelector(".seconds");
+      let countdown;
+      convertFormat(format);
+
+      function convertFormat(format) {
+        switch (format) {
+          case "seconds":
+            return timer(number);
+          case "minutes":
+            return timer(number * 60);
+          case "hours":
+            return timer(number * 60 * 60);
+          case "days":
+            return timer(number * 60 * 60 * 24);
+        }
+      }
+
+      function timer(seconds) {
+        const now = Date.now();
+        const then = now + seconds * 1000;
+
+        countdown = setInterval(() => {
+          const secondsLeft = Math.round((then - Date.now()) / 1000);
+
+          if (secondsLeft <= 0) {
+            clearInterval(countdown);
+            return;
+          }
+
+          displayTimeLeft(secondsLeft);
+        }, 000);
+      }
+
+      function displayTimeLeft(seconds) {
+        daysElement.textContent = Math.floor(seconds / 86400);
+        hoursElement.textContent = Math.floor((seconds % 86400) / 3600);
+        minutesElement.textContent = Math.floor(
+          ((seconds % 86400) % 3600) / 60
+        );
+        secondsElement.textContent =
+          seconds % 60 < 10 ? `0${seconds % 60}` : seconds % 60;
+      }
+    };
+
+    /*
+  start countdown
+  enter number and format
+  days, hours, minutes or seconds
+*/
+    countDownClock(83, "days");
+  </script>
+
+  <script>
+    const destinationInput = document.getElementById("destination");
+    const locationInput = document.getElementById("location");
+    const tourTypeInput = document.getElementById("tourType");
+    const minPriceInput = document.getElementById("minPrice");
+    const maxPriceInput = document.getElementById("maxPrice");
+    const languageInput = document.getElementById("language");
+
+    const destinationErrorMessage = document.getElementById("destinationErrorMessage");
+    const locationErrorMessage = document.getElementById("locationErrorMessage");
+    const tourTypeErrorMessage = document.getElementById("tourTypeErrorMessage");
+    const minPriceErrorMessage = document.getElementById("minPriceErrorMessage");
+    const maxPriceErrorMessage = document.getElementById("maxPriceErrorMessage");
+    const languageErrorMessage = document.getElementById("languageErrorMessage");
+
+    document.getElementById("form").addEventListener("submit", (event) => {
+
+      try {
+        let errors = {
+          destination: "",
+          location: "",
+          tourType: "",
+          minPrice: "",
+          maxPrice: "",
+          language: "",
+        };
+        event.preventDefault();
+
+        if (!/^\d*[1-9]\d*$/i.test(minPriceInput.value)) {
+          errors = {
+            ...errors,
+            minPrice: "Only positive numbers are allowed!"
+          }
+        }
+
+        if (!/^\d*[1-9]\d*$/g.test(maxPriceInput.value)) {
+          errors = {
+            ...errors,
+            maxPrice: "Only positive numbers are allowed!"
+          }
+        }
+
+        if (!isNaN(destinationInput.value)) {
+          errors = {
+            ...errors,
+            destination: "Only numbers are not allowed.",
+          };
+        }
+
+        if (!isNaN(locationInput.value)) {
+          errors = {
+            ...errors,
+            location: "Only numbers are not allowed.",
+          };
+        }
+
+        if (!isNaN(tourTypeInput.value)) {
+          errors = {
+            ...errors,
+            tourType: "Only numbers are not allowed.",
+          };
+        }
+
+        if (!isNaN(languageInput.value)) {
+          errors = {
+            ...errors,
+            language: "Only numbers are not allowed.",
+          };
+        }
+
+        if (destinationInput.value.length === 0) {
+          errors = {
+            ...errors,
+            destination: "Destination is required!",
+          };
+        }
+
+        if (locationInput.value.length === 0) {
+          errors = {
+            ...errors,
+            location: "Location is required!",
+          };
+        }
+
+        if (tourTypeInput.value.length === 0) {
+          errors = {
+            ...errors,
+            tourType: "Tour Type is required!",
+          };
+        }
+
+        if (minPriceInput.value.length === 0) {
+          errors = {
+            ...errors,
+            minPrice: "Min Price is required!",
+          };
+        }
+
+        if (maxPriceInput.value.length === 0) {
+          errors = {
+            ...errors,
+            maxPrice: "Max Price is required!",
+          };
+        }
+
+        if (languageInput.value.length === 0) {
+          errors = {
+            ...errors,
+            language: "Language is required!",
+          };
+        }
+
+        if (errors.destination ||
+          errors.language ||
+          errors.location ||
+          errors.maxPrice ||
+          errors.minPrice ||
+          errors.tourType
+        ) {
+          throw errors;
+        } else {
+          window.location.href = "search.html";
+          document.getElementById("form").reset();
+
+          destinationErrorMessage.textContent = "";
+          locationErrorMessage.textContent = "";
+          tourTypeErrorMessage.textContent = "";
+          minPriceErrorMessage.textContent = "";
+          maxPriceErrorMessage.textContent = "";
+          languageErrorMessage.textContent = "";
+        }
+      } catch (errors) {
+        const errorMessages = [...document.getElementsByClassName("errors")];
+        const errorNames = ["destination", "location", "tourType", "minPrice", "maxPrice", "language"];
+        let i = 0;
+        while (i < Object.keys(errors).length) {
+          errorMessages[i].innerHTML = errors[errorNames[i]]
+          i++;
+        }
+      }
+    });
+  </script>
+
+  <script>
+    const discount_bold = document.getElementById("discount_bold");
+
+    let day;
+    switch (new Date().getDay()) {
+      case 0:
+        day = "Sunday";
+        break;
+      case 1:
+        day = "Monday";
+        break;
+      case 2:
+        day = "Tuesday";
+        break;
+      case 3:
+        day = "Wednesday";
+        break;
+      case 4:
+        day = "Thursday";
+        break;
+      case 5:
+        day = "Friday";
+        break;
+      case 6:
+        day = "Saturday";
+    }
+
+    if (day === "Sunday" || day === "Saturday") {
+      discount_bold.textContent = "Get upto 70% discount";
+    }
+
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    const topNavRight = document.getElementById("topNavRight");
+    const myAccount = document.getElementById("myAccount");
+    const element = document.createElement("a");
+    element.setAttribute("id", "logout");
+    let login = localStorage.getItem("login");
+
+    if (login) {
+      element.textContent = "Logout";
+      element.setAttribute("href", "signIn.html");
+      topNavRight.appendChild(element);
+      myAccount.style.display = "inline";
+      $("#myAccount").show();
+
+    } else {
+      $("#myAccount").hide();
+    }
+
+    $("#logout").click(function () {
+      localStorage.setItem("login", "");
+    });
+  </script>
+</body>
+
+</html>

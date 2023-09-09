@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f6f6;
+}
+
+.flex-col {
+  width: 80%;
+  padding: 6rem;
+}
+
+.discover {
+  /* padding: 5rem 3rem 5rem 3rem; */
+  background-color: #003768;
+  display: flex;
+  justify-content: center;
+
+}
+
+.discover h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #f9f6f6;
+}
+
+.forgotImage img {
+  padding: 5rem;
+}
+
+.discover-content {
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: 'Caramel';
+  font-weight: 200;
+  color: #f9f6f6;
+  margin-top: 3.5rem;
+}
+
+.isMember {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.access {
+  justify-content: center;
+  align-items: center;
+  width: min(100%, 700px);
+  padding: 3.5rem 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.35rem;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+input:focus {
+  outline: 1px solid #003768;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #003768;
+  color: #fff;
+  font-size: 0.875rem;
+  border: none;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  width: 75%;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+.access__title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.access__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.access__inputGroup {
+  width: 75%;
+}
+
+.access__inputGroup+.access__inputGroup {
+  margin-top: 1.25rem;
+}
+
+.forgotPassword_form {
+  padding-left: 1rem;
+}
+
+.homePage {
+  text-align: center;
+  width: min(100%, 700px);
+  text-decoration: none;
+}
+
+.access__linkToHomepage {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.errors {
+  font-size: 0.7rem;
+  color: red;
+}
+
+.successfulMessage {
+  margin-top: 1rem;
+  width: 75%;
+  color: #41a233;
+  font-size: 0.875rem;
+}
+
+.access__forgotPassword {
+  width: 75%;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.gender {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input[type="radio"], label {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.confirm {
+  text-align: center;
+}
+
+@media (max-width: 715px) {
+  .access {
+    padding: 2.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .access__inputGroup,
+  input[type="submit"] {
+    width: 90%;
+  }
+}

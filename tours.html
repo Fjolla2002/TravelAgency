@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/tours.css" />
+  <link rel="stylesheet" href="style/style1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/tours.js"></script>
+  <title>Tours</title>
+</head>
+
+<body>
+  <header>
+    <div class="top-nav row">
+      <div class="container row">
+        <div class="top-nav_left">
+          <a href="mailto:contasct@example.com">contact@example.com</a>
+          <a href="tel:000000">(00)-000-000</a>
+        </div>
+        <div id="topNavRight" class="top-nav_right">
+          <a href="signIn.html">Sign In</a>
+          <a href="signUp.html">Sign Up</a>
+          <a href="cart.html">Cart</a>
+          <a id="myAccount" href="myAccount.html">My Account</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-nav">
+      <div class="container row">
+        <div class="nav-wrapper">
+          <a href="index.html"><img class="logo" src="assets/images/logo.png" id="logo" alt="Travel Dream" /> </a>
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="tours.html" id="active">Tours</a></li>
+            <li><a href="index.html#featured-packages">Packages</a></li>
+            <li><a href="index.html#latest-blogs">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="clock-container" id="clock">
+      <div class="container">
+        <div id="DisplayClock" class="clock">display time</div>
+        <div id="User" class="user">User</div>
+      </div>
+    </section>
+
+    <section class="most-popular">
+      <div class="container">
+        <h2 class="section-title tour-title">Most Popular</h2>
+        <div class="grid most-popular__images">
+          <div class="tour">
+            <span>Spain</span>
+            <img src="assets/images/barcelona.jpg" alt="spain" />
+          </div>
+          <div class="tour">
+            <span>Greece</span>
+            <img src="assets/images/greece.jpg" alt="Greece" />
+          </div>
+          <div class="tour">
+            <span>Italy</span>
+            <img src="assets/images/italy.jpg" alt="Italy" />
+          </div>
+          <div class="tour">
+            <span>Dubai</span>
+            <img src="assets/images/dubai.jpg" alt="Dubai" />
+          </div>
+          <div class="tour">
+            <span>Disneyland</span>
+            <img src="assets/images/disneyland.jpg" alt="Disneyland Park" />
+          </div>
+          <div class="tour">
+            <span>Egypt</span>
+            <img src="assets/images/egypt.jpg" alt="Egypt" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="local-recommendations">
+      <div class="container">
+        <h2 class="section-title tour-title">Local Recommendation</h2>
+        <div class="grid local-recommendations__images">
+          <div class="tour">
+            <span>Prishtina</span>
+            <img src="assets/images/prishtina.jpg" alt="Prishtina" />
+          </div>
+          <div class="tour">
+            <span>Prizren</span>
+            <img src="assets/images/prizren.jpg" alt="Prizren" />
+          </div>
+          <div class="tour">
+            <span>Brezovica</span>
+            <img src="assets/images/brezovica.jpg" alt="Brezovica" />
+          </div>
+          <div class="tour">
+            <span>Mirusha</span>
+            <img src="assets/images/mirusha.jpg" alt="Mirusha" />
+          </div>
+          <div class="tour">
+            <span>Germia</span>
+            <img src="assets/images/germiapark.jpg" alt="Germia Park" />
+          </div>
+          <div class="tour">
+            <span>Drini i bardhe</span>
+            <img src="assets/images/drinibardh.jpg" alt="Drini i bardhe" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="unique-experiences">
+      <div class="container">
+        <h2 class="section-title tour-title">Unique Experiences</h2>
+        <div class="grid unique-experiences__images">
+          <div class="tour">
+            <span>Harbin</span>
+            <img src="assets/images/1.jpg" alt="Harbin" />
+          </div>
+          <div class="tour">
+            <span>Turkey</span>
+            <img src="assets/images/2.jpg" alt="Turkey" />
+          </div>
+          <div class="tour">
+            <span>Finland</span>
+            <img src="assets/images/3.jpg" alt="Finland" />
+          </div>
+          <div class="tour">
+            <span>China</span>
+            <img src="assets/images/4.jpg" alt="china" />
+          </div>
+          <div class="tour">
+            <span>Egypt</span>
+            <img src="assets/images/5.jpg" alt="Egypt" />
+          </div>
+          <div class="tour">
+            <span>Arizona</span>
+            <img src="assets/images/6.jpg" alt="Arizona" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <table class="pricing-table" border="1" cellpadding="15" cellspacing="10">
+        <caption>Pricing &amp; Offerings</caption>
+        <thead>
+          <tr>
+            <th>Starter</th>
+            <th id="premium">Premium</th>
+            <th>Pro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pricing-row">
+            <td>Free</td>
+            <td>&dollar;99/M</td>
+            <td>&dollar;299/M</td>
+          </tr>
+          <tr>
+            <td>Book all your business travel and accommodation from one place</td>
+            <td>Save up to 25% with VAT ready invoices</td>
+            <td>Unlimited policy and approval workflows</td>
+          </tr>
+          <tr>
+            <td>Consolidated invoicing</td>
+            <td>10 policy and approval workflows</td>
+            <td>Unlimited budgets by cost center</td>
+          </tr>
+          <tr>
+            <td>Unlimited cost centers</td>
+            <td>Track up to 5 budgets by cost center</td>
+            <td>Custom reports & insights</td>
+          </tr>
+          <tr>
+            <td>1 pol
+              icy and approval workflow</td>
+            <td>Integrations with our marketplace apps</td>
+            <td>Custom reports & insights</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><a href="signUp.html">Try it</a></td>
+            <td><a href="signUp.html">Try it</a></td>
+            <td><a href="signUp.html">Try it</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <section class="preferences-container">
+      <div class="container">
+        <h2 class="section-title">Your preferences</h2>
+        <p>Sort our most visited places based on your preferences</p>
+        <div class="preferences">
+          <ol>
+            <li class="rateItem" id='0' draggable="true">Italy</li>
+            <li class="rateItem" id='1' draggable="true">Greece</li>
+            <li class="rateItem" id='2' draggable="true">Spain</li>
+            <li class="rateItem" id='3' draggable="true">France</li>
+            <li class="rateItem" id='4' draggable="true">Thailand</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Travel Dream</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+          <h4>Connect with us</h4>
+          <ul class="social-networks">
+            <li>
+              <a href="https://twitter.com/" target="_blank"><img src="assets/icons/twitter.svg"
+                  alt="twitter icon" /></a>
+            </li>
+            <li>
+              <a href="https://myaccount.google.com/" target="_blank"><img src="assets/icons/google-plus.svg"
+                  alt="google-plus icon" /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/"><img src="assets/icons/linkedin.svg" target="_blank"
+                  alt="linkedin icon" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="index.html">Blogs</a></li>
+            <li><a href="index.html">Testimonals</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li>China</li>
+            <li>Venezuela</li>
+            <li>Brazil</li>
+            <li>Australia</li>
+            <li>London</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our activities</h4>
+          <ul>
+            <li>Trekking</li>
+            <li>Peak Climbing</li>
+            <li>Biking</li>
+            <li>River Rafting</li>
+            <li>Cultural Tours</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom-container">
+        <div class="bottom-text">
+          <span>&copy; Copyright 2020. TravelloLife, Designed by
+            <a href="https://themeforest.net/search/jungle" target="_blank">Templates Jungle</a></span>
+        </div>
+        <div class="bottom-cards">
+          <img src="assets/images/master-card.png" alt="Master Card" />
+          <img src="assets/images/visa.png" alt="Visa" />
+          <img src="assets/images/american-express.png" alt="American Express" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/tours.js"></script>
+
+  <script>
+    let dragged;
+    let id;
+    let index;
+    let indexDrop;
+    let list;
+
+    document.addEventListener("dragstart", ({ target }) => {
+      dragged = target;
+      id = target.id;
+      list = target.parentNode.children;
+      for (let i = 0; i < list.length; i += 1) {
+        if (list[i] === dragged) {
+          index = i;
+        }
+      }
+    });
+
+    document.addEventListener("dragover", (event) => {
+      event.preventDefault();
+    });
+
+    document.addEventListener("drop", ({ target }) => {
+      if (target.className == "rateItem" && target.id !== id) {
+        dragged.remove(dragged);
+        for (let i = 0; i < list.length; i += 1) {
+          if (list[i] === target) {
+            indexDrop = i;
+          }
+        }
+        console.log(index, indexDrop);
+        if (index > indexDrop) {
+          target.before(dragged);
+        } else {
+          target.after(dragged);
+        }
+      }
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    const topNavRight = document.getElementById("topNavRight");
+    const myAccount = document.getElementById("myAccount");
+    const element = document.createElement("a");
+    element.setAttribute("id", "logout");
+    let login = localStorage.getItem("login");
+
+    if (login) {
+      element.textContent = "Logout";
+      element.setAttribute("href", "signIn.html");
+      topNavRight.appendChild(element);
+      myAccount.style.display = "inline";
+      $("#myAccount").show();
+
+    } else {
+      $("#myAccount").hide();
+    }
+
+    $("#logout").click(function () {
+      localStorage.setItem("login", "");
+    });
+  </script>
+</body>
+
+
+
+</html>

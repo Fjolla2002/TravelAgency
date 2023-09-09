@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style/style1.css" />
+  <link rel="stylesheet" href="style/contact.css" />
+  <title>Contact</title>
+</head>
+
+<body>
+  <header>
+    <div class="top-nav row">
+      <div class="container row">
+        <div class="top-nav_left">
+          <a href="mailto:contasct@example.com">contact@example.com</a>
+          <a href="tel:000000">(00)-000-000</a>
+        </div>
+        <div id="topNavRight" class="top-nav_right">
+          <a href="signIn.html">Sign In</a>
+          <a href="signUp.html">Sign Up</a>
+          <a href="cart.html">Cart</a>
+          <a id="myAccount" href="myAccount.html">My Account</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-nav">
+      <div class="container row">
+        <div class="nav-wrapper">
+          <a href="index.html"><img class="logo" src="assets/images/logo.png" id="logo" alt="Travel Dream" /> </a>
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="index.html#featured-packages">Packages</a></li>
+            <li><a href="index.html#latest-blogs">Blog</a></li>
+            <li><a href="contact.html" id="active">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="contact-container">
+      <audio autoplay>
+        <source src="assets/audio/helpyou.mp3" type="audio/ogg">
+      </audio>
+      <div class="contact_text">
+        <p>
+          If you have any questions or need help, please fill out the form below.
+          We do our best to respond within 1 business day.
+        </p>
+      </div>
+      <div class="contact">
+        <form class="contact__form" id="form">
+          <div class="contact__inputGroup">
+            <label>Name:</label>
+            <br>
+            <input type="text" placeholder="Name" id="name">
+            <span id="nameErrorMessage" class="errors"></span>
+          </div>
+          <div class="contact__inputGroup">
+            <label>Email:</label>
+            <br />
+            <input type="email" placeholder="Email" id="email" />
+            <span id="emailErrorMessage" class="errors"></span>
+          </div>
+          <div class="contact__inputGroup">
+            <label>Comment:</label>
+            <br />
+            <textarea placeholder="Comment" id="comment" cols="20" rows="10"></textarea>
+            <span id="commentErrorMessage" class="errors"></span>
+          </div>
+          <span id="successfulMessage" class="successfulMessage"></span>
+          <input type="submit" />
+        </form>
+      </div>
+    </section>
+    <section class="address-container">
+      <div class="our-address">
+        <div class="address-description">
+          <p>
+            We would love to hear from you. If you have questions regarding any of our service
+            or featured destination&apos;s, please don&apos;t hesitate to call us at the following numbers:
+          </p>
+        </div>
+        <div class="address-description_phone">
+          <div class="telephone">
+            <h4 class="tel-number"><em>Telephone:</em></h4>
+            <a href="#" class="number">(00)-000-000</a> <br>
+            <a href="#" class="number">(00)-000-000</a>
+          </div>
+          <div class="find-location">
+            <a href="geoLocation.html">Find your location</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-link">
+        <div class="contact-address">
+          <address>
+            Visit us at:<br>
+            <mark>Hajdar Dushi, Prishtina</mark><br>
+            <mark><strong><abbr title="Republika e Kosoves">RKS</abbr></strong></mark>
+          </address>
+        </div>
+        <div class="contact-map">
+          <p class="map-title">Map:</p>
+          <iframe
+            src="https://maps.google.com/maps?q=42.6620%C2%B0%20N,%2021.1622%C2%B0%20E&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Travel Dream</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+          <h4>Connect with us</h4>
+          <ul class="social-networks">
+            <li>
+              <a href="https://twitter.com/" target="_blank"><img src="assets/icons/twitter.svg"
+                  alt="twitter icon" /></a>
+            </li>
+            <li>
+              <a href="https://myaccount.google.com/" target="_blank"><img src="assets/icons/google-plus.svg"
+                  alt="google-plus icon" /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/"><img src="assets/icons/linkedin.svg" target="_blank"
+                  alt="linkedin icon" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="index.html">Blogs</a></li>
+            <li><a href="index.html">Testimonals</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li>China</li>
+            <li>Venezuela</li>
+            <li>Brazil</li>
+            <li>Australia</li>
+            <li>London</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our activities</h4>
+          <ul>
+            <li>Trekking</li>
+            <li>Peak Climbing</li>
+            <li>Biking</li>
+            <li>River Rafting</li>
+            <li>Cultural Tours</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom-container">
+        <div class="bottom-text">
+          <span>&copy; Copyright 2020. TravelloLife, Designed by
+            <a href="https://themeforest.net/search/jungle" target="_blank">Templates Jungle</a></span>
+        </div>
+        <div class="bottom-cards">
+          <img src="assets/images/master-card.png" alt="Master Card" />
+          <img src="assets/images/visa.png" alt="Visa" />
+          <img src="assets/images/american-express.png" alt="American Express" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const commentInput = document.getElementById("comment");
+    const nameErrorMessage = document.getElementById("nameErrorMessage");
+    const emailErrorMessage = document.getElementById("emailErrorMessage");
+    const commentErrorMessage = document.getElementById(
+      "commentErrorMessage"
+    );
+    const successfulMessage = document.getElementById("successfulMessage");
+
+    document.getElementById("form").addEventListener("submit", (event) => {
+      try {
+        let errors = {
+          name: "",
+          email: "",
+          comment: "",
+        };
+
+        event.preventDefault();
+
+        if (nameInput.value.length === 0) {
+          errors = {
+            ...errors,
+            name: "Name is required!",
+          };
+        }
+
+        if (emailInput.value.length === 0) {
+          errors = {
+            ...errors,
+            email: "Email is required!",
+          };
+        }
+
+        if (commentInput.value.length === 0) {
+          errors = {
+            ...errors,
+            comment: "Comment is required!",
+          };
+        }
+
+        if (errors.email || errors.comment) {
+          throw errors;
+        } else {
+          successfulMessage.textContent =
+            "Thank you for contacting us! We will answer as soon as possible.";
+
+          nameErrorMessage.textContent = "";
+          emailErrorMessage.textContent = "";
+          commentErrorMessage.textContent = "";
+        }
+      } catch (errors) {
+        nameErrorMessage.textContent = errors.name;
+        emailErrorMessage.textContent = errors.email;
+        commentErrorMessage.textContent = errors.comment;
+      }
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    const topNavRight = document.getElementById("topNavRight");
+    const myAccount = document.getElementById("myAccount");
+    const element = document.createElement("a");
+    element.setAttribute("id", "logout");
+    let login = localStorage.getItem("login");
+
+    if (login) {
+      element.textContent = "Logout";
+      element.setAttribute("href", "signIn.html");
+      topNavRight.appendChild(element);
+      myAccount.style.display = "inline";
+      $("#myAccount").show();
+
+    } else {
+      $("#myAccount").hide();
+    }
+
+    $("#logout").click(function () {
+      localStorage.setItem("login", "");
+    });
+  </script>
+</body>
+
+</html>
